@@ -1,0 +1,276 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body{
+  background: white;
+}
+
+
+
+body {
+font-family: 'Raleway', sans-serif;
+color: black;
+font-size: 16px
+}
+
+a:visited{
+  color: #73877B;
+}
+a:hover{
+  color: #bdbbb6;
+  cursor: pointer;
+}
+a{
+  color: #73877b;
+  text-decoration: none;
+}
+
+nav ul{
+ font-family: 'Playfair Display', serif;
+ font-weight: normal;
+ background: white;
+ padding: 0;
+ margin: 0;
+ display:flex;
+ justify-content: flex-end;
+ align-items: center;
+ height: 50px;
+
+}
+
+nav ul li{
+  display: inline-block;
+  color: black;
+  margin-left: 30px;
+}
+
+.hamburger, .close{
+    display: none;
+  }
+
+  .nav-opened{
+    position: fixed;
+  }
+
+
+header{
+  text-align: center;
+  margin: 0px auto;
+  background-color: #738678;
+  padding: 60px;
+  color: white;
+}
+
+.logo{
+  width:100px;
+  height:100px;
+  fill: #FFFFFF; /*  why is the colour not changing to white? */
+}
+
+h1.myName {
+ font-family: 'Playfair Display', serif;
+ font-size: 50px;
+ }
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  }
+
+.secondHeader{
+  font-style: italic;
+  padding: 0;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+
+
+.aboutSection {
+  text-align: center;
+  background: #FFE6EE;
+  margin: 0px auto;
+  padding: 30px;
+}
+
+.photoSection{
+  height: 700px;
+  background: url(../photos/orangeTree2.jpg) no-repeat fixed;
+  width: 100%;
+}
+
+.treePhoto{
+  align: center;
+}
+
+.aboutTitle{
+  text-align: center;
+}
+
+.contentWrapper{
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  line-height: 1.5;
+  text-align: center;
+  width: 45%;
+  margin: 50px auto;
+
+}
+
+.recipes{
+  margin: 50px auto;
+  text-align: center;
+  height: 500px;
+}
+
+.recipePhotosWrapper1{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.column{
+  width: 20%;
+  margin: 0 1%;
+}
+
+.column img{
+  width: 100%;
+}
+
+
+a{
+  text-decoration: none;
+}
+
+.backToTop {
+  color: #297373;
+  font-weight: bold;
+}
+
+
+
+
+.social{
+  text-align: center;
+  font-size: 40px;
+  background: #839788;
+  color: white;
+  padding: 20px;
+}
+
+.social a{
+  color: white;
+}
+
+.social a:hover{
+  color: #bdbbb6;
+}
+
+/*  why is the link blue? how do I change this? */
+a .instagram{
+  color: #F5E4D7
+}
+
+.logo2{
+  width:40px;
+  height:40px;
+  fill: #FFFFFF; /*  why is the colour not changing to white? */
+}
+
+footer{
+  text-align: center;
+  background: #ffe6e8;
+  }
+
+/*  why can't I get this to have a hover colour or align right? */
+.arrow{
+  font-size: 40px;
+  /* align: right; */
+  color: gray;
+  opacity: .75;
+  bottom:50px;
+  right: 50px;
+  position: fixed;
+}
+
+.formWrapper{
+  text-align: right;
+  background:#F5E4D7;
+  padding: 50px ;
+}
+
+input[type="text"]
+input[type="email"]{ /* Will apply to both text and email input boxes */
+  background: transparent;
+  border-bottom: 2px solid grey;
+}
+
+@media (max-width: 950px) {
+  body {
+    /* background: red; */
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .column{
+    width: 80%;
+    margin: 0;
+    }
+}
+
+
+@media (max-width: 650px){
+    body{
+      /* background: green; */
+    }
+    .column{
+      width: 60%;
+      margin: 0;
+      }
+
+   .hamburger, .close{
+      display: block;
+      font-size: 24px;
+      font-family: "Lucida Sans Unicode", "Arial Unicode MS";
+       }
+
+    ul.main-nav {
+      top: -100vh;
+      margin-top: 0;
+      position: fixed;
+
+    }
+    ul.main-nav li {
+        display: block;
+        text-align: center;
+        font-size: 24px;
+      }
+      .main-nav.open-nav {
+         position: fixed;
+         top: 0;
+         right: 0;
+         padding: 2% 10%;
+         z-index: 2;
+         background: #FFE6EE;
+         width: 100%;
+         height: 100vh;
+     }
+     .open-nav a {
+         color: #73877b;
+     }
+
+     .open-nav a:hover{
+        color:  #bdbbb6;
+     }
+
+      .recipePhotosWrapper{
+        text-align: center;
+        height: 100%;
+    }
+}
