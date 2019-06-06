@@ -33,7 +33,7 @@ nav ul{
  font-family: 'Playfair Display', serif;
  font-weight: normal;
  background: white;
- padding: 0;
+ padding: 10px;
  margin: 0;
  display:flex;
  justify-content: flex-end;
